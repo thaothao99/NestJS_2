@@ -1,0 +1,36 @@
+enum PostCategory {
+  PROMOTIONAL
+  CONTROVERSIAL
+  LIFESTYLE
+  PERSONAL
+}
+type Author {
+  id: String
+  firstName: String
+  lastName: String
+  dob: Float
+}
+
+type Post {
+  id: ID
+  title: String
+  content: String
+  categories: [PostCategory]
+  createdAt: Float
+  createdBy: Author
+}
+
+type Query {
+  post(postID: String!): Post
+  posts: [Post]
+}
+
+type Mutation {
+  createPost(input: PostInput!): Post
+}
+
+input PostInput {
+  title: String!
+  content: String!
+  categories: [PostCategory]!
+}
