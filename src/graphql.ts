@@ -6,10 +6,10 @@
 
 /* tslint:disable */
 export enum PostCategory {
-    PROMOTIONAL = 'PROMOTIONAL',
-    CONTROVERSIAL = 'CONTROVERSIAL',
-    LIFESTYLE = 'LIFESTYLE',
-    PERSONAL = 'PERSONAL'
+    PROMOTIONAL = "PROMOTIONAL",
+    CONTROVERSIAL = "CONTROVERSIAL",
+    LIFESTYLE = "LIFESTYLE",
+    PERSONAL = "PERSONAL"
 }
 
 export interface AuthorInput {
@@ -32,8 +32,8 @@ export interface Author {
 }
 
 export interface IMutation {
-    createAuthor(input: AuthorInput): Author | Promise<Author>;
-    createPost(input: PostInput): Post | Promise<Post>;
+    createAuthor(author: AuthorInput): Author | Promise<Author>;
+    createPost(postInput: PostInput): Post | Promise<Post>;
 }
 
 export interface Post {

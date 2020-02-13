@@ -31,10 +31,9 @@ export class PostResolver {
     return this.authorService.findOne(authorID)
   }
 
-  // @UseGuards(AuthGuard)
+  @UseGuards(AuthGuard)
   @Mutation('createPost')
-  createPost(@Args('input') input: PostInput, @Context() context: any) {
-    console.log(input, context)
-    return this.postService.createPost(input, context)
+  createPost(@Args('postInput') postInput: PostInput, @Context() context: any) {
+    return this.postService.createPost(postInput, context)
   }
 }

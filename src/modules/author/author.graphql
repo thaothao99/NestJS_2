@@ -11,7 +11,7 @@ type Query {
 }
 
 type Mutation {
-  createAuthor(input: AuthorInput!): Author
+  createAuthor(author: AuthorInput!): Author
 }
 
 input AuthorInput {

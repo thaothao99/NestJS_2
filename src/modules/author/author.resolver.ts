@@ -21,7 +21,7 @@ export class AuthorResolver {
   }
 
   @Mutation('createAuthor')
-  createAuthor(@Args('input') input: AuthorInput) {
-    return this.authorService.createAuthor(input)
+  createAuthor(@Args('author') author: AuthorInput) {
+    return this.authorService.createAuthor(author)
   }
 }

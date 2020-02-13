@@ -9,13 +9,14 @@ export class AuthGuard implements CanActivate {
       const ctx = GqlExecutionContext.create(context)
       const { req } = ctx.getContext()
       const token = req && req.headers.authorization.split(' ')[1]
-      const privateKey = 'mySecretKey'
+      const privateKey = 's3cr3t'
+      // console.log(req, token)
       if (!token) {
         return false
       }
       jwt.verify(token, privateKey, (err, decode) => {
         if (err) { throw err }
-        req.userID = decode.userID
+        ctx.getContext().authorID = decode.authorID
       })
       return true
     } catch (err) {
