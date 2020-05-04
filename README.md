@@ -1,4 +1,4 @@
-## Mục tiêu của bài test
+## Mục tiêu
 1. Implement được apollo graphql trên framework nestjs
 2. Sử dụng guard, context trên graphql
 3. Sử dụng resolve property để sử liên kết các đối tượng
