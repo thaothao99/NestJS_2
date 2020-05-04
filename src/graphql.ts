@@ -1,15 +1,14 @@
-
+/* tslint:disable */
 /** ------------------------------------------------------
  * THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
  * -------------------------------------------------------
  */
 
-/* tslint:disable */
 export enum PostCategory {
-    PROMOTIONAL = "PROMOTIONAL",
-    CONTROVERSIAL = "CONTROVERSIAL",
-    LIFESTYLE = "LIFESTYLE",
-    PERSONAL = "PERSONAL"
+    PROMOTIONAL = 'PROMOTIONAL',
+    CONTROVERSIAL = 'CONTROVERSIAL',
+    LIFESTYLE = 'LIFESTYLE',
+    PERSONAL = 'PERSONAL'
 }
 
 export interface AuthorInput {
