@@ -78,8 +78,3 @@ với object được hashed (với secret code là **s3cr3t**) như sau, sử d
 }
 ```
 4. Chỉ tạo được post với giá trị thuộc tính *categories* chỉ thuộc tập các giá trị khai báo trong phần mô tả
-
-## Expected Test Result
-<p align="center">
-  <img src="./at/demo1.png" width="100%" alt="success example">
-</p>
